@@ -1,16 +1,16 @@
 import LearningMgt from "./components/LearningMgt";
-import Training from "./components/Training";
+import Hero from "./components/Hero";
+import CorporateTraining from "./components/TrainingPrograms";
+import ManagementProgram from "./components/ManagementProgram";
 export default function Home() {
 
   return (
 
-<main>
-  <section>
-<Training />
-  </section>
-  <section>
+<>
+<Hero />
     <LearningMgt/>
-  </section>
-</main>
+    <CorporateTraining/>
+    <ManagementProgram/>
+</>
   );
 }

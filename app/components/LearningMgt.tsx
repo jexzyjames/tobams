@@ -3,7 +3,7 @@ import image from "@/public/images/Image.jpg";
 import arrow from "@/public/images/arrow-up-right.svg";
 export default function LearningMgt() {
   return (
-    <div className="bg-learnmgt-bg relative lg:flex-row flex flex-col justify-between gap-10 items-center   px-16 py-14 max-w-7xl ">
+    <div className="bg-learnmgt-bg relative lg:flex-row flex flex-col justify-between gap-10 items-center  px-8  lg:px-16 py-14  ">
 
 
   <p className="absolute left-11 top-4  text-2xl font-medium text-user sm:left-11 sm:text-3xl lg:hidden">
@@ -13,15 +13,22 @@ export default function LearningMgt() {
 
 
 
-      <div className="flex flex-wrap">
+      <div className="flex ">
     <div className="">
  <div className="h-97.5 w-97.5 mt-4 shrink-0">
   <Image
     src={image}
+    width={557}
+    height={568}
+    alt="An adult male and female learner smiling, dressed in corporate wear"
+    className=" hidden lg:block h-full w-full rounded-full object-cover"
+  />
+   <Image
+    src={image}
     width={327}
     height={327}
     alt="An adult male and female learner smiling, dressed in corporate wear"
-    className=" h-full w-full rounded-full object-cover"
+    className="lg:hidden  h-full w-full rounded-full object-cover"
   />
 </div>
 
@@ -49,7 +56,7 @@ export default function LearningMgt() {
           <p className="text-user font-medium mt-4  ">
             Some of our courses include:{" "}
           </p>
-          <ul className="list-disc relative pl-4 mt-2 max-w-150  grid sm:grid-cols-1 lg:grid-cols-3 ">
+          <ul className="flex  mt-4 max-w-[678px]  flex-col lg:grid grid-cols-3 gap-y-1 gap-x-2 ps-6 leading-[150%] text-sm lg:text-base list-disc">
             <li>Business Analysts</li>
             <li>Design Thinking</li>
             <li>Effective Communication</li>
