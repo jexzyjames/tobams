@@ -22,7 +22,7 @@ export default function ConsultantsTraining() {
         }
     ]
     return (
-        <section className="bg-consultants px-16 py-12 mt-8">
+        <section className="bg-consultants py-12 px-12 lg:px-16 mt-8">
             <span className="md:text-[40px] text-user font-semibold text-[24px]">Training the Consultant</span>
             <p className="md:text-[18px] text-user font-semibold text-[16px] mt-2">Maximise Your Potential as a Certified Trainer:</p>
 
