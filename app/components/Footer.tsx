@@ -38,19 +38,19 @@ const solution = [
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-5 p-6 md:px-16 md:py-8 bg-(--color-purple-100)">
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_3fr] gap-6 md:gap-[80px] py-5 md:pb-0 border-b md:border-0 border-(--color-white-6)">
+    <footer className="flex flex-col gap-5 p-6 md:px-16 md:py-8 bg-[#11040e]">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_3fr] gap-6 md:gap-[80px] py-5 md:pb-0 border-b md:border-0 border-[#FFFFFF0F]">
         <div className="flex flex-col gap-6">
           <Link href="/">
             <Image
-              src="/tobams-logo.png"
+              src="/images/logo.svg"
               alt="Tobams Group logo"
               width={188}
               height={72.61}
             />
           </Link>
 
-          <p className="md:tracking-[3%] text-sm md:text-base text-(--color-text-muted)">
+          <p className="md:tracking-[3%] text-sm md:text-[16px] text-[#F8F8F8]">
             Tobams Group is an innovative consultancy firm reshaping the future
             of tech talent development in Africa, specializing in talent
             acquisition, internships, and skill development with a global
@@ -134,7 +134,7 @@ export default function Footer() {
                 <li key={item}>
                   <Link
                     href="#"
-                    className="leading-[150%] lg:tracking-[3%] text-sm lg:text-base text-white"
+                    className="leading-[150%] lg:tracking-[3%] text-sm lg:text-[16px] text-white"
                   >
                     {item}
                   </Link>
@@ -156,7 +156,7 @@ export default function Footer() {
                 <li key={item}>
                   <Link
                     href="#"
-                    className="leading-[150%] lg:tracking-[3%] text-sm lg:text-base text-white"
+                    className="leading-[150%] lg:tracking-[3%] text-sm lg:text-[16px] text-white"
                   >
                     {item}
                   </Link>
@@ -178,7 +178,7 @@ export default function Footer() {
                 <li key={item}>
                   <Link
                     href="#"
-                    className="leading-[150%] lg:tracking-[3%] text-sm lg:text-base text-white"
+                    className="leading-[150%] lg:tracking-[3%] text-sm lg:text-[16px] text-white"
                   >
                     {item}
                   </Link>
@@ -189,30 +189,30 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-6 md:mt-8 p-4 lg:p-6 rounded-lg bg-(--color-white-6)">
+      <div className="flex flex-col lg:flex-row gap-6 md:mt-8 p-4 lg:p-6 rounded-lg bg-[#FFFFFF0F]">
         <div className="flex flex-col gap-[10px] order-2 lg:order-1 w-full w-[70%]">
-          <h5 className="leading-[150%] lg:leading-[100%] text-lg lg:text-xl font-bold text-white">
+          <h5 className="leading-[150%] lg:leading-[100%] text-lg lg:text-xl font-bold text-white ">
             Registered Offices
           </h5>
 
           <div className="flex flex-col lg:flex-row gap-4">
             <div>
-              <p className="text-sm lg:text-base font-semibold text-secondary">
+              <p className="text-sm lg:text-base font-semibold text-[#EF4353]">
                 United Kingdom
               </p>
 
-              <p className="text-base text-white">
+              <p className="text-[16px] text-white">
                 07451196 (Registered by Company House) Vine Cottages, 215 North
                 Street, Romford, Essex, United Kingdom, RM1 4QA
               </p>
             </div>
 
-            <div className="lg:px-6 lg:border-s border-(--color-white-6)">
+            <div className="lg:px-6 lg:border-s border-[#DDD0DA]">
               <p className="text-sm lg:text-base font-semibold text-secondary">
                 Nigeria
               </p>
 
-              <p className="text-sm lg:text-base text-white">
+              <p className="text-sm lg:text-[16px] text-white">
                 RC 1048722 (Registered by the Corporate Affairs Commission) 4,
                 Muaz Close, Angwari-Rimi
               </p>
@@ -220,13 +220,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-4 order-1 lg:order-2 w-full lg:w-[30%] px-0 lg:px-6 lg:border-s border-(--color-white-6)">
+        <div className="flex flex-col gap-4 order-1 lg:order-2 w-full lg:w-[30%] px-0 lg:px-6 lg:border-s border-[#DDD0DA]">
           <h5 className="leading-[150%] lg:leading-[100%] text-lg md:text-xl font-bold text-white">
             Contact Information
           </h5>
 
           <div className="flex flex-col gap-[10px] lg:gap-3">
-            <span className="flex flex-shrink-0 gap-4 leading-[150%] tracking-[3%] text-sm lg:text-base text-white">
+            <span className="flex flex-shrink-0 gap-4 leading-[150%] tracking-[3%] text-sm lg:text-[16px] text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -244,7 +244,7 @@ export default function Footer() {
               theteam@tobamsgroup.com
             </span>
 
-            <span className="flex flex-shrink-0 gap-4 leading-[150%] tracking-[3%] text-sm lg:text-base text-white">
+            <span className="flex flex-shrink-0 gap-4 leading-[150%] tracking-[3%] text-sm lg:text-[16px] text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -265,8 +265,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row justify-between items-center gap-6 pt-6 md:pt-8 border-t border-(--color-white-6)">
-        <p className="order-2 lg:order-1 leading-[24px] tracking-wide text-sm lg:text-base text-center lg:text-start font-light text-white">
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-6 pt-6 md:pt-8 border-t border-[#DDD0DA]">
+        <p className="order-2 lg:order-1 leading-[24px] tracking-wide text-sm lg:text-[16px] text-center lg:text-start font-light text-white">
           Copyright ⓒ Tobams Group, 2024. All rights reserved.
         </p>
 
@@ -276,7 +276,7 @@ export default function Footer() {
         >
           <Link
             href="#"
-            className="order-2 lg:order-1 text-nowrap text-center underline font-light leading-[36px] text-sm lg:text-base text-white"
+            className="order-2 lg:order-1 text-nowrap text-center underline font-light leading-[36px] text-sm lg:text-[16px] text-white"
           >
             Terms and Conditions
           </Link>
@@ -284,14 +284,14 @@ export default function Footer() {
           <div className="flex gap-4 lg:gap-8 order-1 lg:order-2">
             <Link
               href="#"
-              className="basis-2/4 text-nowrap underline font-light text-sm lg:text-base text-white"
+              className="basis-2/4 text-nowrap underline font-light text-sm lg:text-[16px] text-white"
             >
               Privacy Policy
             </Link>
 
             <Link
               href="#"
-              className="basis-2/4 text-nowrap underline font-light text-sm lg:text-base text-white"
+              className="basis-2/4 text-nowrap underline font-light text-sm lg:text-[16px] text-white"
             >
               Cookies Policy
             </Link>
