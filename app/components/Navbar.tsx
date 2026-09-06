@@ -1,7 +1,7 @@
 import Image from "next/image";
 import logo from "@/public/images/logo.svg";
 import user from "@/public/images/user.svg";
-import arrow_down from "@/public/images/arrow-down.svg";
+import arrow_down from "@/public/images/arrow-down-light.svg";
 import menu from "@/public/images/hamburger-menu.svg";
 import Link from "next/link";
 function Navbar() {
@@ -49,7 +49,7 @@ function Navbar() {
 ];
 
   return (
-    <header className="border-b-2 max-h-[76px] md:max-h-[104px]  border-b-user-bg px-6 py-6 sm:px-10 lg:px-16">
+    <header className=" max-h-[76px] md:max-h-[174px] relative bg px-6 py-6 sm:px-10 lg:px-16">
       <nav
         className="flex items-center justify-between"
         aria-label="Main navigation"
@@ -88,11 +88,21 @@ function Navbar() {
           <Image src={menu} alt="" width={32} height={32} />
         </button>
       </nav>
-      <ul className="hidden lg:flex px-16 py-6">
+
+<div className="hidden lg:block fixed left-0 right-0 h-[2px] bg-[#571244]" />
+
+      
+      <ul className="hidden lg:inline-flex px-16 py-6">
   <li className="flex mx-auto gap-8">
 {links.map((link) => (
   <div key={link.name}>
     <p className="flex items-center gap-2">
+     {link.hasDropdown && (
+        <Image
+          src={arrow_down}
+          alt="arrow-down for links"
+        />
+      )}
       <span
         className={
           link.isHighlighted
@@ -102,13 +112,6 @@ function Navbar() {
       >
         {link.name}
       </span>
-
-      {link.hasDropdown && (
-        <Image
-          src={arrow_down}
-          alt="arrow-down for links"
-        />
-      )}
     </p>
   </div>
 ))}
