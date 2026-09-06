@@ -8,44 +8,52 @@ function Navbar() {
      const links =[
     {
       name:'About',
-      hasDropdown:true
+      hasDropdown:true,
+     isHighlighted:true,
   },
     {
       name:'What We Do',
       hasDropdown:true,
+         isHighlighted:false,
 
   },
     {
       name:'Jobs',
       hasDropdown:true,
+         isHighlighted:false,
 
   },
     {
       name:'Projects',
-      hasDropdown:false
+      hasDropdown:false,
+         isHighlighted:false,
     
 
   },
     {
       name:'TG ACADEMY',
-      hasDropdown:false
+      hasDropdown:false,
+         isHighlighted:false,
       
 
   },
     {
       name:'Strategic Partnership',
-      hasDropdown:false
+      hasDropdown:false,
+          isHighlighted:false,
       
 
   },
     {
       name:'Pricing',
-      hasDropdown:false
+      hasDropdown:false,
+          isHighlighted:false,
 
   },
     {
       name:'Book a Consultation',
-      hasDropdown:false
+      hasDropdown:false,
+          isHighlighted:false,
       
 
   },
@@ -94,7 +102,11 @@ function Navbar() {
     {links.map((link)=> {
       return(
         <div className=""  key={link.name}>
-         <p className="flex item-center">{link.name}{
+         <p className="flex item-center">{link.name}
+         {link.isHighlighted && ( 
+             <span className=' block border border-b-[#571244] border' ></span>
+             )}
+              {
           link.hasDropdown && (
             <Image 
             src={arrow_down}
