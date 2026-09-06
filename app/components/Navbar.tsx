@@ -87,13 +87,13 @@ function Navbar() {
         >
           <Image src={menu} alt="" width={32} height={32} />
         </button>  
-<div className="hidden lg:block absolute left-0 right-0 h-[2px] bg-[#571244]" />
       </nav>
-<div className="hidden lg:block absolute left-0 right-0 h-[2px] bg-[#571244]" />
+   
+      <div className="hidden lg:block absolute left-0 right-0 h-[2px] bg-[#571244] opacity-25" />
 
 
       
-      <ul className="hidden lg:inline-flex space-x-4 xl:space-x-8">
+      <ul className="hidden lg:inline-flex px-16 py-6 ">
   <li className="flex mx-auto gap-8">
 {links.map((link) => (
   <div key={link.name}>
