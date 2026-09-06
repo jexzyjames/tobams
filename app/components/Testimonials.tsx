@@ -95,20 +95,7 @@ export default function Testimonials() {
               aria-label="Previous testimonial"
               className="cursor-pointer flex justify-center items-center w-[28px] h-[28px] rounded bg-(--color-secondary-10)"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="11"
-                height="17"
-                viewBox="0 0 11 17"
-                fill="none"
-                aria-hidden={true}
-                focusable={false}
-              >
-                <path
-                  d="M3.77067 8.48533L10.3707 15.0853L8.48533 16.972L0 8.48533L8.48533 0L10.3707 1.88533L3.77067 8.48533Z"
-                  fill="#EF4353"
-                />
-              </svg>
+             
               <Image 
               src={prev}
               alt="previous-button to change focused image"
@@ -123,23 +110,9 @@ export default function Testimonials() {
               aria-label="Next testimonial"
               className="cursor-pointer flex justify-center items-center w-[28px] h-[28px] rounded bg-(--color-secondary-10)"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="11"
-                height="17"
-                viewBox="0 0 11 17"
-                fill="none"
-                aria-hidden={true}
-                focusable={false}
-              >
-                <path
-                  d="M6.60006 8.48533L6.10352e-05 15.0853L1.88539 16.972L10.3707 8.48533L1.88539 0L6.10352e-05 1.88533L6.60006 8.48533Z"
-                  fill="#EF4353"
-                />
-              </svg>
                <Image 
               src={next}
-              alt="previous-button to change focused image"
+              alt="next-button to change focused image"
               width={32}
               height={32}
               className=""
