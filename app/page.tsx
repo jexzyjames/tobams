@@ -7,12 +7,14 @@ import LearningWithCeo from "./components/LearningWIthCeo";
 import ConsultantsTtraining from "./components/ConsultantsTraining";
 import CallToConsult from "./components/CallToConsult";
 import Testimonials from "./components/Testimonials";
+
+
 export default function Home() {
 
   return (
 
 <>
-<Hero />
+    <Hero />
     <LearningMgt/>
     <CorporateTraining/>
     <ManagementProgram/>
