@@ -86,17 +86,18 @@ function Navbar() {
           aria-label="Open navigation menu"
         >
           <Image src={menu} alt="" width={32} height={32} />
-        </button>
+        </button>  
+<div className="hidden lg:block absolute left-0 right-0 h-[2px] bg-[#571244]" />
       </nav>
 
-<div className="hidden lg:block fixed left-0 right-0 h-[2px] bg-[#571244]" />
 
       
-      <ul className="hidden lg:inline-flex px-16 py-6">
+      <ul className="hidden lg:inline-flex space-x-4 xl:space-x-8">
   <li className="flex mx-auto gap-8">
 {links.map((link) => (
   <div key={link.name}>
     <p className="flex items-center gap-2">
+        {link.name}
      {link.hasDropdown && (
         <Image
           src={arrow_down}
@@ -110,7 +111,6 @@ function Navbar() {
             : ""
         }
       >
-        {link.name}
       </span>
     </p>
   </div>
