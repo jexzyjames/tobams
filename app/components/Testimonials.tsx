@@ -1,15 +1,11 @@
-import Image, { StaticImageData } from "next/image";
-import aisha from "@/public/images/user-one.png";
-import john from "@/public/images/user-two.jpg";
-import nonso from "@/public/images/user-three.jpg";
-import doe from "@/public/images/user-four.jpg";
+import Image from "next/image";
 
 type Testimonial = {
   id: number;
   name: string;
   role: string;
   review: string;
-  avatar: StaticImageData;
+  avatar: string;
 };
 
 const testimonials: Testimonial[] = [
@@ -19,7 +15,7 @@ const testimonials: Testimonial[] = [
     role: "Founder, CraftHub NG",
     review:
       "Working with Tobams Group on our website was a breeze. They understood our vision and transformed it into a beautiful online space. Highly recommend their Website Design service!",
-    avatar: aisha,
+    avatar: "/images/user-one.png",
   },
   {
     id: 2,
@@ -27,7 +23,7 @@ const testimonials: Testimonial[] = [
     role: "Marketing Manager, E-Commerce Emporium",
     review:
       "Tobams Group's Digital Marketing strategies gave our brand the boost it needed. Simple yet powerful techniques that delivered tangible results. A pleasure to collaborate with!",
-    avatar: john,
+    avatar: "/images/user-two.jpg",
   },
   {
     id: 3,
@@ -35,7 +31,7 @@ const testimonials: Testimonial[] = [
     role: "HR Director, FutureTech Solutions",
     review:
       "Tobams Group has been instrumental in our talent acquisition journey. Their Tech Talent Solution service consistently connects us with the right professionals. Reliable and straightforward.",
-    avatar: nonso,
+    avatar: "/images/user-three.jpg",
   },
   {
     id: 4,
@@ -43,7 +39,7 @@ const testimonials: Testimonial[] = [
     role: "Lorem ipsum dolor sit amet.",
     review:
       "The Creative and Digital Media services at Tobams Group brought our ideas to life. Simple, creative, and impactful – exactly what we needed for our projects.",
-    avatar: doe,
+    avatar: "/images/user-four.jpg",
   },
 ];
 
