@@ -65,7 +65,7 @@ function Navbar() {
         aria-label="Main navigation"
       >
         <Link href="/">
-          <Image src={logo} alt="Your Company Name" width={165} height={64} />
+          <Image src={logo} alt="Tobams" width={165} height={64} />
         </Link>
 
         <div className="hidden items-center justify-center gap-4 lg:flex">
@@ -101,19 +101,25 @@ function Navbar() {
   <li className="flex mx-auto gap-8">
     {links.map((link)=> {
       return(
-        <div className=""  key={link.name}>
-         <p className="flex item-center">{link.name}
-         {link.isHighlighted && ( 
-             <span className=' block border border-b-[#571244] border' ></span>
-             )}
-              {
-          link.hasDropdown && (
-            <Image 
-            src={arrow_down}
-            alt="arrow-down for links"
-            />
-          )}</p> 
-        </div>
+       <div key={link.name}>
+  <p className="relative flex items-center gap-2">
+    <span className="relative">
+      {link.name}
+
+      {link.isHighlighted && (
+        <span className="absolute bottom-[-6px] left-0 h-[2px] w-full bg-[#571244]" />
+      )}
+    </span>
+
+    {link.hasDropdown && (
+      <Image
+        src={arrow_down}
+        alt="Arrow down for links"
+      />
+    )}
+  </p>
+</div>
+
       )
     })}
   </li>
