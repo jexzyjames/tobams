@@ -1,9 +1,9 @@
 export default function Training() {
   return (
     <section
-      className="relative flex min-h-[400px] items-center justify-center
+      className="relative flex h-[400px] items-center justify-center
              bg-hero bg-cover bg-center
-             px-6  sm:px-10 lg:min-h-[500px] lg:px-16"
+             px-6  sm:px-10 lg:h-[500px] lg:px-16"
       aria-labelledby="training-heading"
     >
       <div className="absolute inset-0 bg-black/70" aria-hidden="true" />
