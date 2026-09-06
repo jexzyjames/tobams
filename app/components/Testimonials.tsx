@@ -1,11 +1,9 @@
 import Image, { StaticImageData } from "next/image";
-import aisha from '@/public/images/user-one.png'
-import john from '@/public/images/user-two.jpg'
-import nonso from '@/public/images/user-three.jpg'
-import doe from '@/public/images/user-four.jpg'
-import next from '@/public/images/arrow-next.svg'
-import prev from '@/public/images/arrow-prev.svg'
- 
+import aisha from "@/public/images/user-one.png";
+import john from "@/public/images/user-two.jpg";
+import nonso from "@/public/images/user-three.jpg";
+import doe from "@/public/images/user-four.jpg";
+
 type Testimonial = {
   id: number;
   name: string;
@@ -45,7 +43,7 @@ const testimonials: Testimonial[] = [
     role: "Lorem ipsum dolor sit amet.",
     review:
       "The Creative and Digital Media services at Tobams Group brought our ideas to life. Simple, creative, and impactful – exactly what we needed for our projects.",
-    avatar:doe,
+    avatar: doe,
   },
 ];
 
@@ -62,7 +60,7 @@ export default function Testimonials() {
             {testimonials.map((testimonial) => (
               <li
                 key={testimonial.id}
-                className="w-full md:w-[322.72] lg:w-[370] h-[200px] lg:h-[250px] shrink-0 flex flex-col gap-4 lg:gap-6 p-5 lg:px-6 border-s-2 border-[#EF4353] rounded-lg lg:rounded-2xl bg-white"
+                className="w-full md:w-[322.72px] lg:w-[370px] h-[200px] lg:h-[250px] shrink-0 flex flex-col gap-4 lg:gap-6 p-5 lg:px-6 border-s-2 border-[#EF4353] rounded-lg lg:rounded-2xl bg-white"
               >
                 <div className="flex items-center gap-[21px]">
                   <Image
@@ -95,13 +93,11 @@ export default function Testimonials() {
               aria-label="Previous testimonial"
               className="cursor-pointer flex justify-center items-center w-[28px] h-[28px] rounded bg-(--color-secondary-10)"
             >
-             
               <Image 
-              src={prev}
-              alt="previous-button to change focused image"
-              width={32}
-              height={32}
-              className=""
+                src="/images/arrow-prev.svg"
+                alt="previous button"
+                width={32}
+                height={32}
               />
             </button>
 
@@ -110,12 +106,11 @@ export default function Testimonials() {
               aria-label="Next testimonial"
               className="cursor-pointer flex justify-center items-center w-[28px] h-[28px] rounded bg-(--color-secondary-10)"
             >
-               <Image 
-              src={next}
-              alt="next-button to change focused image"
-              width={32}
-              height={32}
-              className=""
+              <Image 
+                src="/images/arrow-next.svg"
+                alt="next button"
+                width={32}
+                height={32}
               />
             </button>
           </div>
