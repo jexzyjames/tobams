@@ -51,7 +51,7 @@ function Navbar() {
   return (
     <header className=" max-h-[76px] md:max-h-[174px]  bg px-6 py-6 sm:px-10 lg:px-16">
       <nav
-        className="flex items-center justify-between"
+        className="flex items-center mb-4 justify-between"
         aria-label="Main navigation"
       >
         <Link href="/">
@@ -93,7 +93,7 @@ function Navbar() {
 
 
       
-      <ul className="hidden lg:inline-flex px-16 py-6 ">
+      <ul className="hidden lg:inline-flex px-[64px] py-[20px] ">
   <li className="flex mx-auto gap-8">
 {links.map((link) => (
   <div key={link.name}>
