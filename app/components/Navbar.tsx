@@ -49,7 +49,7 @@ function Navbar() {
 ];
 
   return (
-    <header className=" max-h-[76px] md:max-h-[174px] relative bg px-6 py-6 sm:px-10 lg:px-16">
+    <header className=" max-h-[76px] md:max-h-[174px]  bg px-6 py-6 sm:px-10 lg:px-16">
       <nav
         className="flex items-center justify-between"
         aria-label="Main navigation"
@@ -89,6 +89,7 @@ function Navbar() {
         </button>  
 <div className="hidden lg:block absolute left-0 right-0 h-[2px] bg-[#571244]" />
       </nav>
+<div className="hidden lg:block absolute left-0 right-0 h-[2px] bg-[#571244]" />
 
 
       
@@ -96,22 +97,21 @@ function Navbar() {
   <li className="flex mx-auto gap-8">
 {links.map((link) => (
   <div key={link.name}>
-    <p className="flex items-center gap-2">
+    <p className="relative flex items-center gap-2">
+      <span className="flex items-center gap-2">
         {link.name}
-     {link.hasDropdown && (
-        <Image
-          src={arrow_down}
-          alt="arrow-down for links"
-        />
-      )}
-      <span
-        className={
-          link.isHighlighted
-            ? "border-b-2 border-[#571244]"
-            : ""
-        }
-      >
+
+        {link.hasDropdown && (
+          <Image
+            src={arrow_down}
+            alt="arrow-down for links"
+          />
+        )}
       </span>
+
+      {link.isHighlighted && (
+        <span className="absolute -bottom-2 left-0 hidden h-[2px] w-full bg-[#571244] lg:block" />
+      )}
     </p>
   </div>
 ))}
